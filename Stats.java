@@ -1,30 +1,7 @@
-/**
- * Write a description of class Stats here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Stats  
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Stats
-     */
-    public Stats()
-    {
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public interface Stats {
+    int getWins(); 
+    int getRank(); 
+    int getLosses(); 
+    int numWhite();
+    int numBlack(); 
 }

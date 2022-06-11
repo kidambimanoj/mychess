@@ -1,30 +1,11 @@
-/**
- * Write a description of class ChessBoardImpl here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class ChessBoardImpl  
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ChessBoardImpl
-     */
-    public ChessBoardImpl()
-    {
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public class ChessBoardImpl implements ChessBoard {
+ 
+      public List<Piece> capturedPieces() {
+         return new ArrayList<>();  
+      }
+      
+      public boolean move(boolean isWhite, Piece piece, Square from, Square to) {
+          return false; 
+      }
+    
 }

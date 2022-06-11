@@ -1,26 +1,19 @@
 import java.util.List; 
 
-interface Stats {
-    int getWins(); 
-    int getRank(); 
-    int getLosses(); 
-    int numWhite();
-    int numBlack(); 
-}
-    
-interface UserProfile {
-    Stats getStats(); 
-    String getName(); 
-}
-
 public class ChessGameImpl implements ChessGame {
-    public void play() {
-        // 1. create UserProfile. 
-        // 2. create Board. 
-        
+    
+    private ChessBoardFactory chessBoardFactory; 
+    
+    public ChessGameImpl(ChessBoardFactory chessBoardFactory) {
+        this.chessBoardFactory = chessBoardFactory;    
     }
     
-    public ChessBoard createBoard() {
-         
+    public void play() {
+        // 1. create UserProfile. 
+        ChessBoard chessBoard = createBoard(); 
+    }
+    
+    private ChessBoard createBoard() {
+         return chessBoardFactory.create();
     }
 }
